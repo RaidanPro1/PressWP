@@ -1,0 +1,5 @@
+{
+  "name": "PressHouse",
+  "description": "Yemen Journalist Pre-trained Transformer (YemenJPT): A comprehensive OSINT platform for journalists, providing a suite of tools for data collection, verification, analysis, and collaboration, powered by Press House Yemen.",
+  "requestFramePermissions": []
+}

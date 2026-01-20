@@ -1,0 +1,79 @@
+pageInfo:
+  title: بوابة YemenJPT
+  description: لوحة تحكم للوصول السريع لجميع خدمات منصة الصحفي اليمني
+  navLinks:
+    - title: الرئيسية
+      path: /
+    - title: توثيق
+      path: /docs
+
+appConfig:
+  theme: yemen
+  layout: horizontal
+  iconSize: medium
+  auth:
+    users:
+      - user: admin
+        hash: '2a12d80d29b8a3e4fe4b12658853759715a3c7526e33054f15a1334612488f0d' # Default: dashy
+        type: admin
+
+sections:
+  - name: المنصة الأساسية
+    icon: fas fa-rocket
+    items:
+      - title: تطبيق YemenJPT
+        description: الواجهة الرئيسية لمنصة الصحفي اليمني
+        icon: https://raw.githubusercontent.com/Lissy93/dashy/master/public/item-icons/raspberry-pi.png
+        url: https://${DOMAIN}
+      - title: بوابة الأخبار
+        description: إدارة محتوى الأخبار والمقالات (WordPress)
+        icon: fas fa-newspaper
+        url: https://wp.${DOMAIN}/wp-admin
+      - title: حالة الخدمات
+        description: مراقبة لحظية لعمل جميع الخدمات (Uptime Kuma)
+        icon: fas fa-heart-pulse
+        url: https://status.${DOMAIN}
+
+  - name: الإدارة والنظام
+    icon: fas fa-server
+    items:
+      - title: إدارة النظام
+        description: واجهة Portainer لإدارة حاويات Docker
+        icon: fab fa-docker
+        url: https://sys.${DOMAIN}
+      - title: مراقبة الأداء
+        description: عرض حي لمؤشرات أداء الخادم (Glances)
+        icon: fas fa-chart-line
+        url: https://glances.${DOMAIN}
+      - title: قاعدة البيانات
+        description: واجهة Adminer لإدارة قاعدة البيانات
+        icon: fas fa-database
+        url: https://db.${DOMAIN}
+
+  - name: التطوير والأتمتة
+    icon: fas fa-code
+    items:
+      - title: مستودع الكود
+        description: خادم Git الخاص بالمنصة (Gitea)
+        icon: fab fa-git-alt
+        url: https://git.${DOMAIN}
+      - title: الأتمتة
+        description: بناء وتطوير مسارات العمل الآلية (n8n)
+        icon: fas fa-robot
+        url: https://auto.${DOMAIN}
+      
+  - name: البوابات المتخصصة
+    icon: fas fa-door-open
+    items:
+      - title: بوابة التدريب
+        description: نظام Moodle لإدارة الدورات التدريبية
+        icon: fas fa-graduation-cap
+        url: https://training.${DOMAIN}
+      - title: مرصد الانتهاكات
+        description: منصة Ushahidi لجمع ورصد الانتهاكات
+        icon: fas fa-map-location-dot
+        url: https://violations.${DOMAIN}
+      - title: الدعم الفني
+        description: نظام Chatwoot لإدارة قنوات الدعم والتواصل
+        icon: fas fa-headset
+        url: https://chat.${DOMAIN}

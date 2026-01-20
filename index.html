@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <title>YemenJPT OSINT Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="منصة بيت الصحافة (YemenJPT): منظومة رقمية متكاملة للصحفيين، توفر أدوات للتقصي مفتوح المصدر، التحقق، التحليل، والتعاون الآمن، مقدمة من بيت الصحافة - اليمن.">
+  <meta name="keywords" content="OSINT, Yemen, Journalism, Investigation, Press House, الصحافة, اليمن, تحقيق, استقصاء, بيت الصحافة, تقصي مفتوح المصدر">
+  <link rel="icon" type="image/png" href="assets/logos/press_house_logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Cairo', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Tajawal', sans-serif; }
+    .font-mono { font-family: 'Inconsolata', monospace; }
+    .transition-all { transition: all 0.3s ease-in-out; }
+    @keyframes runToolAnimation {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.04); box-shadow: 0 0 0 15px rgba(13, 43, 107, 0.3); } /* ph-blue */
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(13, 43, 107, 0); }
+    }
+    .animate-run-tool {
+      animation: runToolAnimation 0.7s ease-in-out;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'ph-blue': {
+              DEFAULT: '#0D2B6B', // Updated from logo
+              'dark': '#1a4db3',
+              'light': '#e6f0ff'
+            },
+            'ph-yellow': {
+              DEFAULT: '#F2C000', // Updated from logo
+              'dark': '#ffdb4d'
+            },
+            'base-100': '#FFFFFF',
+            'base-200': '#F9FAFB',
+            'base-300': '#F3F4F6',
+            'dark-base-100': '#0F172A',
+            'dark-base-200': '#1E293B',
+            'dark-base-300': '#334155',
+          },
+        },
+      },
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "rxjs": "https://esm.sh/rxjs@^7.8.2?conditions=es2015",
+    "rxjs/operators": "https://esm.sh/rxjs@^7.8.2/operators?conditions=es2015",
+    "rxjs/ajax": "https://esm.sh/rxjs@^7.8.2/ajax?conditions=es2015",
+    "rxjs/webSocket": "https://esm.sh/rxjs@^7.8.2/webSocket?conditions=es2015",
+    "rxjs/testing": "https://esm.sh/rxjs@^7.8.2/testing?conditions=es2015",
+    "rxjs/fetch": "https://esm.sh/rxjs@^7.8.2/fetch?conditions=es2015",
+    "@angular/compiler": "https://esm.sh/@angular/compiler@^21.1.0?external=rxjs",
+    "@angular/platform-browser": "https://esm.sh/@angular/platform-browser@^21.1.0?external=rxjs",
+    "@angular/common/http": "https://esm.sh/@angular/common@^21.1.0/http?external=rxjs",
+    "@angular/core": "https://esm.sh/@angular/core@^21.1.0?external=rxjs",
+    "@angular/common": "https://esm.sh/@angular/common@^21.1.0?external=rxjs",
+    "@angular/forms": "https://esm.sh/@angular/forms@^21.1.0?external=rxjs",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0?external=rxjs"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-base-200 dark:bg-dark-base-100 text-gray-700 dark:text-gray-200">
+  <app-root></app-root>
+</body>
+</html>
